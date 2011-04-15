@@ -1,0 +1,27 @@
+<!DOCTYPE unspecified PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<table>
+  <tr>
+    <th>用户名</th>
+    <th>密&nbsp;码</th>
+  </tr>
+  <?php 
+  		foreach($this->userinfo as $key=>$value){
+  ?>
+  <tr>
+  	<td>
+ 	 <?php echo $value['user_name'] ?>
+  	</td>
+ 	 <td>
+  		<?php echo $value['user_pwd'] ?>
+  	</td>
+  </tr>
+  <?php } ?>			
+  <?php 
+  		foreach($this->username as $key=>$value){
+  			echo '我的姓名：'.$value['user_name'];
+  		}
+  ?>	 	
+  		
+</table>
+
